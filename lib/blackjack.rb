@@ -21,7 +21,8 @@ end
 
 def get_user_input
   # code #get_user_input here
-  user_input = gets.chomp
+  input = gets.chomp
+  return input
 end
 
 def end_game (total_card)
@@ -31,14 +32,16 @@ end
 
 def initial_round
   # code #initial_round here
-  card1 = deal_card
-  card2 = deal_card
-  card_sum = card1 + card2
-  display_card_total(card_sum)
+  card1 = deal_card #first random card
+  card2 = deal_card #second random card
+  card_sum = card1 + card2 #sum of the two cards
+  display_card_total(card_sum) #pass the sum as argument and call display_card_total
 end
 
 def hit?
   # code hit? here
+  prompt_user
+  user_input = get_user_input
 end
 
 def invalid_command
