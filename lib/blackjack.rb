@@ -16,12 +16,12 @@ end
 def prompt_user
   # code #prompt_user here
   puts "Type 'h' to hit or 's' to stay"
-  gets.chomp
+
 end
 
 def get_user_input
   # code #get_user_input here
-  gets
+  user_input = gets.chomp
 end
 
 def end_game (total_card)
@@ -31,9 +31,10 @@ end
 
 def initial_round
   # code #initial_round here
-  deal_card
-  deal_card
-  display_card_total
+  card1 = deal_card
+  card2 = deal_card
+  card_sum = card1 + card2
+  display_card_total(card_sum)
 end
 
 def hit?
