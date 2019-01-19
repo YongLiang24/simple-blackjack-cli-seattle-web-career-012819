@@ -28,7 +28,7 @@ end
 
 def end_game (total_card)
   # code #end_game here
-  #if total_card >21
+  if total_card >21
   puts "Sorry, you hit #{total_card}. Thanks for playing!"
 end
 
