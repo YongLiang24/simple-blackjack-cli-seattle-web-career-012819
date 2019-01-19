@@ -6,7 +6,6 @@ end
 def deal_card
   #this method returns a random card
   return rand 1..11
-
 end
 
 def display_card_total (card_total)
