@@ -38,14 +38,22 @@ def initial_round
   display_card_total(card_sum) #pass the sum as argument and call display_card_total
 end
 
-def hit?
+def hit? (current_sum)
   # code hit? here
-  prompt_user
-  user_input = get_user_input
+  prompt_user #ask user for input s or h
+  user_input = get_user_input #store user's input to a new variable
+  if user_input == "h"
+    return current_sum += deal_card #deal a new card to user when input is h
+  elsif user_input == "s"
+    return current_sum #return the sum when input is s
+  else
+    invalid_command #call the invalid_command method
+  end
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
