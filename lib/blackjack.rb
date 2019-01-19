@@ -38,7 +38,7 @@ def initial_round
   card2 = deal_card #second random card
   card_sum = card1 + card2 #sum of the two cards
   display_card_total(card_sum) #pass the sum as argument and call display_card_total
-  return sum
+  return card_sum
 end
 
 def hit? (current_sum)
