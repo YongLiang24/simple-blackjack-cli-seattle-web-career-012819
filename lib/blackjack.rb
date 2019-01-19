@@ -67,8 +67,8 @@ def runner
   welcome #call welcome method
   initial_sum = initial_round #get the initial two cards
   while initial_sum < 21 #exe
-    sum = hit?(sum)
-    display_card_total(sum)
+    initial_sum = hit?(initial_sum)
+    display_card_total(initial_sum)
   end
-  end_game(sum)
+  end_game(initial_sum)
 end
