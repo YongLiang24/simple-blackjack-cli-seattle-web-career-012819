@@ -54,7 +54,7 @@ def hit? (current_sum)
 end
 
 def invalid_command
-  # code invalid_command here
+  #this method informs the user the input was invalid
   puts "Please enter a valid command"
 end
 
