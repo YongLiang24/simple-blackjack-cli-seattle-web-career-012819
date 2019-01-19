@@ -1,27 +1,27 @@
 def welcome
-  # code #welcome here
+  #a method displays a welcome message
   puts "Welcome to the Blackjack Table"
 end
 
 def deal_card
-  # code #deal_card here
-  random_card = rand 1..11
-  return random_card
+  #this method returns a random card
+ return rand 1..11
+  #return random_card
 end
 
 def display_card_total (card_total)
-  # code #display_card_total here
+  #this method displays the total sum of cards
   puts "Your cards add up to #{card_total}"
 end
 
 def prompt_user
-  # code #prompt_user here
+  #a message asks for user input
   puts "Type 'h' to hit or 's' to stay"
 
 end
 
 def get_user_input
-  # code #get_user_input here
+  #get the user input
   input = gets.chomp
   return input
 end
