@@ -66,9 +66,9 @@ def runner
   # code runner here
   welcome #call welcome method
   initial_sum = initial_round #get the initial two cards
-  while initial_sum < 21 #exe
-    initial_sum = hit?(initial_sum)
-    display_card_total(initial_sum)
+  while initial_sum < 21 #execute this loop until the sum is greater than 21
+    initial_sum = hit?(initial_sum) #prompt user to hit or skip
+    display_card_total(initial_sum)#display the card sum
   end
-  end_game(initial_sum)
+  end_game(initial_sum) #this method is call when sum is greater than 21
 end
